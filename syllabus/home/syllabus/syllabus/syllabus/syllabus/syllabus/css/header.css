@@ -1,0 +1,89 @@
+.headB p {
+  font-size: 14px;
+  margin-bottom: 0px;
+}
+
+.action-menu a.login {
+  color: #323333;
+}
+
+.action-menu a {
+  font-weight: bold;
+  font-size: 14px;
+  padding: 0 0 0 25px;
+}
+
+.action-menu a.login::before {
+  content: "\f023";
+}
+
+.fa-icon::before {
+  display: inline-block;
+  font-family: 'FontAwesome';
+  font-size: 20px;
+  font-weight: normal;
+  color: #98bacc;
+  margin: 0 8px 0 0;
+}
+
+.action-menu a {
+  font-weight: bold;
+  font-size: 14px;
+  padding: 0 0 0 25px;
+}
+
+.action-menu a.button-signin::before {
+  content: "\f02e";
+  color: #1eaebf;
+}
+
+.fa-icon::before {
+  display: inline-block;
+  font-family: 'FontAwesome';
+  font-size: 20px;
+  font-weight: normal;
+  color: #98bacc;
+  margin: 0 8px 0 0;
+}
+
+.action-menu {
+  float: right;
+}
+
+header {
+  position: relative;
+  /* top: 0; */
+  /* left: 0; */
+  z-index: 100;
+  width: 100%;
+  /* background-color: rgba(255, 255, 255, 0.9); */
+  background-color: #fff;
+  /* margin: 0 auto; */
+  overflow: hidden;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+}
+
+header .contain {
+  justify-content: space-between;
+  max-width: 1000px;
+  max-width: var(--large-width);
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
+header div:first-child {
+  margin-right: auto;
+}
+
+a {
+  color: #337ab7;
+  text-decoration: none;
+}
+
+.action-menu p {
+  margin: 0;
+  padding-left: 25px;
+}
