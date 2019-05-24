@@ -1,10 +1,7 @@
 <?php
 require 'menu.php';
-// $_GET['キー名']:クエリ情報を受け取る
 $menuName = $_GET['name'];
-// 配列$menusから特定のMenuインスタンスを取得するクラスメソッド（findByNameメソッド）
 $syllabuscontent = findByName($syllabus, $menuName);
-
 ?>
 <html>
 <?php require 'head.php' ?>

@@ -12,7 +12,7 @@
     $classname = $_POST['classname'];
     $username = $_SESSION["NAME"];
     
-    $pdo = new PDO("mysql:dbname=syllabus", "root");
+    $pdo = connect();
     
     $sql = "INSERT INTO post(resultgrade,resultlearn,resulteasylearn,resulttakeclass,resultcomment,classname,username) VALUES(:resultgrade, :resultlearn, :resulteasylearn, :resulttakeclass, :resultcomment, :classname, :username)";
     

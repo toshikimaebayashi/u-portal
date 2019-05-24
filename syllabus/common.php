@@ -11,5 +11,4 @@
     return '<img src="images/' . $name . '.jpg" alt="">';
   }
   
-
 ?>

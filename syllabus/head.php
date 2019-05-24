@@ -19,7 +19,6 @@ $url = $_SERVER['SCRIPT_NAME'];
   <link rel="stylesheet" type="text/css" href="css/slick.css" media="screen" />
   <link href="css/style.css" rel="stylesheet">
   <link href="css/header.css" rel="stylesheet">
-  <!--<link href="css/front.css" rel="stylesheet">-->
   <script type="text/javascript">
     $(function() {
       $('.slick-box').slick({
@@ -76,8 +75,6 @@ $url = $_SERVER['SCRIPT_NAME'];
 
   <?php } else if($url == "/PHPlesson2/syllabus/webroot/Login.php?"){?>
   <link href="css/login.css" rel="stylesheet">
-
-
   <?php } ?>
 
 </head>

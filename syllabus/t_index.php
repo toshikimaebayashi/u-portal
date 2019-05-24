@@ -19,19 +19,6 @@
       </div>
     </div>
 
-    <!--<div class="con1">
-      <div class="main-visual" data-v-d28f5fe6="" data-v-04c3d416="">
-        <p class="lead" data-v-d28f5fe6=""> デザイン会社がはじめた、デザイナーのための転職エージェント </p>
-        <p class="concept" data-v-d28f5fe6="">To University Student</p>
-        <div class="button-container" data-v-d28f5fe6=""><a href="index.html" class="basic-button is-standard is-large" data-v-553e386e="" data-v-d28f5fe6="">登録してはじめよう</a></div>
-        <div class="button-container" data-v-d28f5fe6=""><a href="index.html" class="basic-button is-standard is-large number2" data-v-553e386e="" data-v-d28f5fe6="">登録してはじめよう</a></div>
-      </div>
-    </div>-->
-    <!--<div class="con-title">
-              <h3 class="panel-title">人気授業ランキング</h3>
-              <p class="text">転職・キャリアの個別相談やポートフォリオ相談など、デザイナーに特化したイベントを多数開催してます。</p>
-     </div>-->
-
     <div class="slick-box">
       <?php foreach ($syllabus as $g) { ?>
       <figure>

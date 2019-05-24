@@ -44,3 +44,4 @@ function getUserData($params){
   }
   return $result;
 }
+?>

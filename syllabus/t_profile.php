@@ -37,7 +37,6 @@
           <form class="row-img" action="profile.php" method="post">
             <div class="col-md-6 col-xs-12">
               <div class="user-label-icon label-icon-lg m-b-md centered-block">
-                <!--<img class="img-circle" src="https://form.run/default_thumbnails/bird.png" alt="Bird">-->
                 <?php require 'media/media_up.php' ?>
               </div>
               <fieldset class="form-group">

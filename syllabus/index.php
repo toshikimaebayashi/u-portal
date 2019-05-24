@@ -4,6 +4,4 @@
   $st = $pdo->query("SELECT * FROM syllabus");
   $syllabus = $st->fetchAll();
   require 't_index.php';
-
-
 ?>

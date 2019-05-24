@@ -21,7 +21,6 @@
               <div class="row">
                 <div class="col-xs-12 col-sm-6 reprep">
                   <div class="user_box_front">
-                    <!--<div class="icon size40" style="background-image: url('https://menta.work/storage/icon/4605_5c78d4e58c9cd.jpg');"></div>-->
                     <?php require 'media/review_media_up.php' ?>
                     <div class="body">
                       <div class="bold"><?php echo $g['username'] ?></div>
@@ -39,11 +38,6 @@
                       <p class="small2"><?php echo $g['resultcomment'] ?></p>
                     </div>
                   </div>
-                  <!--<div id="a0A1000002978eV-3">
-                    <ul class="o-h p-r voteForm">
-                      <li><a class="button button-good goodBtn">GOOD！<span class="button-good-no votePoint">0</span></a></li>
-                    </ul>
-                  </div>-->
                 </div>
               </div>
             </td>
