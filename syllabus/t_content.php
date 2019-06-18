@@ -1,8 +1,3 @@
-<?php 
-require 'menu.php';
-$menuName = $_GET['name'];
-$syllabuscontent = findByName($syllabus, $menuName);
-?>
 <html>
 
 <?php require 'head.php' ?>

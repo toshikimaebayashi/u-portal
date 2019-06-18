@@ -1,9 +1,10 @@
 <?php
 
   require '../common.php';
+  require 'class_Review.php';
   
   if ( !empty($_POST['btn-confirm'])) {
-      
+    
     $resultgrade = $_POST['resultgrade'];
     $resultlearn = $_POST['resultlearn'];
     $resulteasylearn = $_POST['resulteasylearn'];
@@ -12,19 +13,9 @@
     $classname = $_POST['classname'];
     $username = $_SESSION["NAME"];
     
-    $pdo = connect();
+    $userReview = new Review($resultgrade, $resultlearn, $resulteasylearn, $resulttakeclass, $resultcomment, $classname, $username);
     
-    $sql = "INSERT INTO post(resultgrade,resultlearn,resulteasylearn,resulttakeclass,resultcomment,classname,username) VALUES(:resultgrade, :resultlearn, :resulteasylearn, :resulttakeclass, :resultcomment, :classname, :username)";
-    
-    $stmt = $pdo->prepare($sql);
-    
-    $params = array(':resultgrade' => $resultgrade, ':resultlearn' => $resultlearn, ':resulteasylearn' => $resulteasylearn, ':resulttakeclass' => $resulttakeclass, ':resultcomment' => $resultcomment, ':classname' => $classname, ':username' => $username);
-    
-    $stmt->execute($params);
-    
-    header('Location: ../index.php');
-
-    exit();
+    $userReview->createReview($resultgrade, $resultlearn, $resulteasylearn, $resulttakeclass, $resultcomment, $classname, $username);
   }
 
 ?>

@@ -2,7 +2,7 @@
   <div class="contain">
     <div class="container-small">
       <a href="index.php">
-        <img src="images/transparent.png" class="title">
+        <img src="../images/transparent.png" class="title">
       </a>
     </div>
     <?php if(!isset($_SESSION["NAME"])) { ?>

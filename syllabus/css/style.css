@@ -741,7 +741,7 @@ dd {
 
 .Sidebar__status {
   border-radius: 8px;
-  box-shadow: 0px 1px 6px #888;
+  box-shadow: 1px 1px 4px 0px #bbbbbb;
   margin-bottom: 10px;
   padding: 10px 0px 0px;
   background-color: #fff;
@@ -918,71 +918,6 @@ p {
   margin: 0 0 10px;
 }
 
-header {
-  /* position: absolute; */
-  /* top: 0; */
-  /* left: 0; */
-  z-index: 100;
-  width: 100%;
-  /* background-color: rgba(255, 255, 255, 0.9); */
-  background-color: #fff;
-  /* margin: 0 auto; */
-
-}
-
-header .contain {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 1000px;
-  max-width: var(--large-width);
-  margin-left: auto;
-  margin-right: auto;
-
-}
-
-.headB a {
-  display: block;
-  padding: 8px 25px;
-  color: inherit;
-  font-size: 16px;
-  text-decoration: none;
-  border-radius: 5px;
-}
-
-.headB ul {
-  display: flex;
-}
-
-.headB ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-
-
-.headB {
-  display: block !important;
-}
-
-.contain {
-  width: 1060px;
-}
-
-.title {
-  width: 200px;
-}
-
-.container-small {
-  margin: 10px 0;
-}
-
-.container-small p {
-  margin-bottom: 0;
-  margin-top: 10px;
-  font-size: 11.9px;
-}
 
 h4 a {
   color: #000;
@@ -1088,12 +1023,12 @@ h4 a {
   list-style: none;
   float: left;
   margin: 0 3px;
-  background: #757575;
+  background: #7d7b7b;
   border-radius: 5px;
   color: #fff;
   border-radius: 20px;
-  padding: 3px 12px;
-  font-size: 14px;
+  padding: 6px 12px;
+  font-size: 13px;
 }
 
 .tag-list ul {
@@ -1598,6 +1533,7 @@ a.modalClose {
   min-height: 1px;
   margin: 23px;
   margin-left: 10px;
+  margin-top: 0;
 }
 
 .smanone {
@@ -1651,4 +1587,167 @@ a.rollover {
 .registArea p,
 .requestArea p {
   line-height: 1.8em;
+}
+
+ul.slick-dots li {
+  display: none;
+}
+
+input[type="submit"],
+input[type="button"] {
+  border-radius: 0;
+  -webkit-box-sizing: content-box;
+  -webkit-appearance: button;
+  appearance: button;
+  border: none;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+
+@media (max-width: 768px) and (min-width: 315px) {
+
+  .tag-list {
+    overflow: hidden;
+    margin-top: 0px;
+    margin-left: 3px;
+  }
+
+  .smanone {
+    text-overflow: ellipsis;
+    min-height: 160px;
+    max-height: 160px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* white-space: nowrap; */
+    margin-bottom: 15px;
+  }
+
+  .wrap {
+    overflow: hidden;
+  }
+
+  .title-h1 {
+    margin: 0 18px 0px;
+  }
+
+  .slick-box dl {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom-width: 1px;
+    border-bottom-style: dotted;
+    border-bottom-color: #ccc;
+    width: 298px;
+    float: left;
+    /* border: solid 2px #880e4f; */
+    border: 1px solid #e6eef3;
+    padding-right: 20px;
+    padding-top: 5px;
+    border-radius: 10px;
+    padding: 25px 20px;
+    /* border: 2px solid #0cb3d9; */
+    background: #fff;
+    box-shadow: 0 0 15px #eaf1f4;
+    /* height: 500px; */
+  }
+
+  ul.slick-dots li {
+    display: none;
+  }
+
+  .slick-list.draggable {
+    width: 320px;
+    margin: 0;
+    float: left;
+  }
+
+  button.slick-next.slick-arrow {
+    width: 2.5%;
+    float: left;
+    margin-top: 200px;
+  }
+
+  .slick-slide {
+    float: left;
+    height: auto;
+    min-height: 1px;
+    margin: 23px;
+    margin-left: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  a.rollover {
+    display: block;
+    background-color: #c12f34;
+    color: #fff;
+    width: 472px;
+    padding: 25px 0 22px;
+    letter-spacing: 3px;
+    margin: 0 auto 40px;
+    font-size: 22px;
+    text-decoration: none;
+    text-align: center;
+    background: linear-gradient(to bottom, #fbaa70 0%, #f67e28 100%);
+    border: 1px solid #ff421d;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    color: #fff;
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px 20px 20px;
+    width: 80%;
+    height: auto;
+    line-height: 1.2;
+  }
+
+  .registArea,
+  .requestArea {
+    text-align: center;
+    margin: 20px 0px;
+  }
+
+  .smanone p {
+    font-size: 12px;
+    line-height: 20px;
+    margin-bottom: 0px;
+    margin: 0 10px;
+  }
+
+  .slick-box .clearfix dd h5 a {
+    font-size: 18px;
+    line-height: 26px;
+    color: #333333;
+    text-decoration: none;
+    padding: 0;
+  }
+
+  .contain {
+    width: 100%;
+  }
+
+  .title-h1 {
+    margin: 0 18px 0px;
+  }
+
+  .LessonDetail .tag-list li {
+    list-style: none;
+    float: left;
+    margin: 0 3px;
+    background: #7d7b7b;
+    border-radius: 5px;
+    color: #fff;
+    border-radius: 20px;
+    padding: 4px 12px;
+    font-size: 13px;
+  }
+
+  .slick-slider {
+    width: 1090px;
+    overflow: hidden;
+    margin: 0px auto;
+  }
+
+
 }

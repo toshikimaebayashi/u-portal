@@ -4,10 +4,8 @@ $pot = false;
 
   if (isset($_SESSION["NAME"])) {
     $upload_user_name = $_SESSION["NAME"];
-    $pdo = connect();
-    $st = $pdo->query("SELECT * FROM favorite WHERE username =" ."'". $upload_user_name."'");
-    $userdata = $st->fetchAll();
-    $pot = findLikeclass($userdata, $syllabuscontent);
+    $userdata = Menu::findLikeuserdata($upload_user_name);
+    $pot = Menu::findLikeclass($userdata, $syllabuscontent);
   } else {
     $pot = false;
   }

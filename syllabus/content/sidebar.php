@@ -1,6 +1,6 @@
 <div class="Sidebar">
   <div class="Sidebar__status hidden-xs hidden-sm">
-    <?php require 'media/sidebar_media_up.php' ?>
+    <?php require 'sidebar_media.php' ?>
   </div>
   <ul class="mt-15">
     <li>

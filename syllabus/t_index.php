@@ -3,22 +3,17 @@
 
 <body>
   <div class="wrap">
-    <div class="poli">
-      <div class="bk">
-        <div class="top-con">
-          <div class="ptin">
-            <p class="pon"><span>一橋大生</span>のための<br><span>シラバス検索サービス</span></p>
-          </div>
-          <ul>
-            <li>経済学部</li>
-            <li>経済学部</li>
-            <li>経済学部</li>
-            <li>経済学部</li>
-          </ul>
-        </div>
+    <div class="con1">
+      <div class="main-visual" data-v-d28f5fe6="" data-v-04c3d416="">
+        <p class="lead" data-v-d28f5fe6="">一橋大学生のための大学授業検索サービス </p>
+        <p class="concept" data-v-d28f5fe6="">To University<br> Student</p>
+        <div class="button-container" data-v-d28f5fe6=""><a href="t_search.php" class="basic-button is-standard is-large" data-v-553e386e="" data-v-d28f5fe6="">授業を検索する</a></div>
+        <div class="button-container" data-v-d28f5fe6=""><a href="webroot/SignUp.php" class="basic-button is-standard is-large number2" data-v-553e386e="" data-v-d28f5fe6="">登録してはじめよう</a></div>
       </div>
     </div>
-
+    <div class="title-h1">
+      <h1> あなたにあった授業を提供します </h1>
+    </div>
     <div class="slick-box">
       <?php foreach ($syllabus as $g) { ?>
       <figure>
@@ -59,9 +54,9 @@
       <?php foreach ($syllabus as $g) { ?>
       <figure>
         <dl class="clearfix">
-          <dt><a href="content.html"></a></dt>
+          <dt><a href="content.php?name=<?php echo $g['lecture'] ?>"></a></dt>
           <dd>
-            <h5 class="kanren-t"> <a href="content.html"><?php echo $g['lecture'] ?></a> </h5>
+            <h5 class="kanren-t"> <a href="content.php?name=<?php echo $g['lecture'] ?>"><?php echo $g['lecture'] ?></a> </h5>
             <table class="table table-condensed">
               <tbody>
                 <tr class="table-header">

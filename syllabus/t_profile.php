@@ -37,7 +37,7 @@
           <form class="row-img" action="profile.php" method="post">
             <div class="col-md-6 col-xs-12">
               <div class="user-label-icon label-icon-lg m-b-md centered-block">
-                <?php require 'media/media_up.php' ?>
+                <?php Media::media_up($upload_user_name);?>
               </div>
               <fieldset class="form-group">
                 <div class="fr-file-input">

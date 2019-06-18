@@ -105,3 +105,26 @@ footer h4 {
   font-weight: bold;
   color: #880e4f;
 }
+
+@media (max-width: 768px) and (min-width: 315px) {
+
+  .row-footer .col-xs-12 {
+    width: 100%;
+    margin: 0;
+  }
+
+  .Footer {
+    background-color: #312f2f;
+    padding: 10px 0;
+    transition: 0.5s;
+    right: 0px;
+    margin-top: 50px;
+    overflow: hidden;
+  }
+
+  footer h4 {
+    font-size: 16px;
+  }
+
+
+}

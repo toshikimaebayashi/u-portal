@@ -53,3 +53,26 @@ textarea.form-control {
 .btn-register {
   background-color: #008080;
 }
+
+@media (max-width: 768px) and (min-width: 315px) {
+  .container {
+    width: 100%;
+  }
+
+  .col-xs-12 {
+    width: 92%;
+    margin: 5px 15px;
+  }
+
+  .LessonDetail__title {
+    background-color: #880e4f;
+    height: auto;
+    overflow: hidden;
+    padding: 13px;
+  }
+
+  .row.mB10 {
+    width: 92%;
+    margin: 5px 15px;
+  }
+}

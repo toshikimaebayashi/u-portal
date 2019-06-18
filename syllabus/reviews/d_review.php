@@ -1,8 +1,7 @@
 <?php
-  $pdo = connect();
   $st = $pdo->query("SELECT * FROM post");
   $syllabuspost = $st->fetchAll();
-  $postcontent = findByPost($syllabuscontent['lecture']);
+  $postcontent = Menu::findByPost($syllabuscontent['lecture']);
 ?>
 
 <div class="Syllabus__list review">
@@ -21,7 +20,8 @@
               <div class="row">
                 <div class="col-xs-12 col-sm-6 reprep">
                   <div class="user_box_front">
-                    <?php require 'media/review_media_up.php' ?>
+                    <?php $upload_user_name = $g['username']; 
+                    Media::review_media_up($upload_user_name) ?>
                     <div class="body">
                       <div class="bold"><?php echo $g['username'] ?></div>
                       <p class="small">

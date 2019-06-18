@@ -18,15 +18,42 @@ $url = $_SERVER['SCRIPT_NAME'];
   <script type="text/javascript" src="js/slick.js"></script>
   <link rel="stylesheet" type="text/css" href="css/slick.css" media="screen" />
   <link href="css/style.css" rel="stylesheet">
-  <link href="css/header.css" rel="stylesheet">
+  <link href="css/front.css" rel="stylesheet">
   <script type="text/javascript">
     $(function() {
       $('.slick-box').slick({
-        infinite: true,
-        slidesToShow: 3,
-        slidesToScroll: 3
+        dots: true, // スライダー下部に表示される、ドット状のページネーションです
+        infinite: true, // 無限ループ
+        speed: 600, // 切り替わりのスピード
+        slidesToShow: 3, //通常 1024px以上の領域では4画像表示
+        slidesToScroll: 3,
+        responsive: [{
+            breakpoint: 1024,
+            settings: { //601px～1024pxでは3画像表示
+              slidesToShow: 3,
+              slidesToScroll: 3,
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: { //481px～600pxでは2画像表示
+              slidesToShow: 2,
+              slidesToScroll: 2
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: { //480px以下では1画像表示
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
       });
     });
+
+  </script>
+  <script type="text/javascript">
 
   </script>
 
@@ -39,9 +66,33 @@ $url = $_SERVER['SCRIPT_NAME'];
   <script type="text/javascript">
     $(function() {
       $('.slick-box').slick({
-        infinite: true,
-        slidesToShow: 3,
-        slidesToScroll: 3
+        dots: true, // スライダー下部に表示される、ドット状のページネーションです
+        infinite: true, // 無限ループ
+        speed: 600, // 切り替わりのスピード
+        slidesToShow: 3, //通常 1024px以上の領域では4画像表示
+        slidesToScroll: 3,
+        responsive: [{
+            breakpoint: 1024,
+            settings: { //601px～1024pxでは3画像表示
+              slidesToShow: 3,
+              slidesToScroll: 3,
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: { //481px～600pxでは2画像表示
+              slidesToShow: 2,
+              slidesToScroll: 2
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: { //480px以下では1画像表示
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
       });
     });
 
@@ -75,6 +126,11 @@ $url = $_SERVER['SCRIPT_NAME'];
 
   <?php } else if($url == "/PHPlesson2/syllabus/webroot/Login.php?"){?>
   <link href="css/login.css" rel="stylesheet">
+
+  <?php } else if($url == "/PHPlesson2/syllabus/admin/make_page.php"){?>
+  <link href="../css/header.css" rel="stylesheet">
+  <link href="../css/footer.css" rel="stylesheet">
+  <link href="../css/style.css" rel="stylesheet">
   <?php } ?>
 
 </head>

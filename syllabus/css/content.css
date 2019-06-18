@@ -531,6 +531,8 @@ a {
 .btn-like {
   background-color: #fce4ec;
   color: #000;
+  border-radius: 4px !important;
+  padding: 9px 10px;
 }
 
 .icon-star {
@@ -928,4 +930,283 @@ tbody {
 
 .LessonModule__footer table .table-header {
   background: #fffdf1;
+}
+
+input[type="submit"],
+input[type="button"] {
+  border-radius: 0;
+  -webkit-box-sizing: content-box;
+  -webkit-appearance: button;
+  appearance: button;
+  border: none;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+input[type="submit"]::-webkit-search-decoration,
+input[type="button"]::-webkit-search-decoration {
+  display: none;
+}
+
+input[type="submit"]::focus,
+input[type="button"]::focus {
+  outline-offset: -2px;
+}
+
+
+@media (max-width: 768px) and (min-width: 315px) {
+
+  .LessonDetail__title {
+    background-color: #880e4f;
+    height: 110px;
+    padding: 13px;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    color: #080808;
+    font-size: 13px;
+    line-height: 1.6;
+    font-family: 游ゴシック, YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .Syllabus__list {
+    list-style-type: none;
+    width: 100%;
+    margin: 0px auto 15px;
+    padding-left: 0px;
+    box-shadow: 1px 1px 4px 0px #bbbbbb;
+    border-radius: 3px;
+    background-color: #fff;
+    padding: 15px;
+  }
+
+  .table {
+    max-width: 100%;
+    margin-bottom: 20px;
+    margin: 0;
+  }
+
+  h1.lecture-title {
+    color: #fff;
+    padding-left: 0px;
+    margin-bottom: 5px;
+    font-size: 24px;
+  }
+
+  .LessonDetail__nav {
+    float: none;
+    list-style: none;
+    margin: 5px 0px;
+  }
+
+  h4,
+  .h4 {
+    font-size: 18px;
+  }
+
+  .LessonDetail__info .table {
+    max-width: 100%;
+    margin-bottom: 8px;
+  }
+
+  .LessonDetail__info {
+    padding: 12px;
+    padding-top: 17px;
+    background: #fff;
+  }
+
+  .LessonDetail__title {
+    background-color: #880e4f;
+    height: 150px;
+    padding: 13px;
+  }
+
+  .Syllabus__header p {
+    font-weight: bold;
+    color: #008080;
+    font-size: 14px;
+    margin: 0 0 5px;
+  }
+
+  .row-A {
+    height: auto;
+    margin-top: 30px;
+  }
+
+  .col-md-9 {
+    width: 92%;
+    margin: 0 15px;
+    /* text-align: center; */
+  }
+
+  .pT10.pB10.pL10 {
+    margin-top: 10px;
+  }
+
+  .col-sm-6-B {
+    width: 92%;
+    margin: 0 15px;
+  }
+
+  .list1 {
+    padding: 15px;
+  }
+
+  .Syllabus__row-1 {
+    width: 100%;
+    padding: 0px;
+    padding-bottom: 5px;
+    padding-top: 0px;
+  }
+
+  .articleTitle_regular {
+    font-weight: 600;
+    font-size: 18px;
+    display: inline;
+    margin: 0 3px 0 0;
+  }
+
+  .review .col-xs-12 {
+    width: 92%;
+    margin: 0 15px;
+  }
+
+  .user_box_front .body {
+    width: 100%;
+    text-align: left;
+  }
+
+  .col-xs-12.col-sm-6.reprep {
+    /* margin: 0 30px; */
+    width: 95%;
+    margin: 10px;
+    border-radius: 20px;
+  }
+
+  .reprep p {
+    font-size: 16px;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  p.small2 {
+    font-size: 14px;
+    /* font-weight: bold; */
+    width: auto;
+    float: left;
+  }
+
+  .col-md-3 {
+    width: 92%;
+    margin: 0 15px;
+  }
+
+  .user-label-icon.label-icon-lg img {
+    width: 75%;
+    margin: 0 13%;
+    /* margin-left: 45px; */
+    text-align: center;
+  }
+
+  .breadcrumb {
+    display: none;
+  }
+
+  ul.Syllabus__rev {
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+    float: left;
+  }
+
+  .btn {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 8px;
+    font-size: 14px;
+    line-height: 1.428571429;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    /* background-color: #f67e28; */
+    background-color: #FFB74D;
+    color: #fff;
+    width: 100%;
+  }
+
+  .btn-like {
+    background-color: #fce4ec;
+    color: #000;
+  }
+
+  .reprep {
+    width: 100%;
+    text-align: center;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .tag-list {
+    overflow: hidden;
+    margin-top: 0;
+    margin-left: 3px;
+  }
+
+  header {
+    margin-bottom: 0px;
+  }
+
+  .Lesson__relative-lesson {
+    display: none;
+  }
+
+  .size40 {
+    width: 50px;
+    height: 50px;
+  }
+
+  .bold {
+    font-weight: 700;
+    font-size: 16px;
+    font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "HiraKakuProN-W3", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック", "helvetica", "arial", sans-serif;
+  }
+
+  .reprep p {
+    font-size: 13px;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  .articleTitle {
+    /* border-left: 5px solid #bfcdda; */
+    padding: 1px 0 1px 10px;
+    margin: 30px 0 10px 0;
+    margin-bottom: 0px;
+    margin-top: 30px;
+    font-family: メイリオ, Meiryo, "ヒラギノ角ゴ ProN W3", HiraKakuProN-W3, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック", helvetica, arial, sans-serif;
+    border-color: #faebcc;
+    color: #008080;
+    /* background: #fff; */
+  }
+
+  .Sidebar {
+    margin-top: 0px;
+  }
+
 }

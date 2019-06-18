@@ -1,5 +1,5 @@
 <?php
-session_start();
+require 'common.php';
 ?>
 
 <html>
@@ -11,8 +11,8 @@ session_start();
     <div class="icatch">
       <div class="inner">
         <div class="text-wrap">
-          <p><span>ITサービス・ツールを<wbr>まとめて比較</span></p>
-          <h1>おすすめ資料カテゴリ一覧</h1>
+          <p><span>気になる授業を<wbr>カテゴリから検索</span></p>
+          <h1>おすすめ授業カテゴリ一覧</h1>
         </div>
       </div>
     </div>

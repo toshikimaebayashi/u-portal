@@ -1,7 +1,7 @@
 <?php 
 //①データ取得ロジックを呼び出す
-include_once('model.php');
-$userData = getUserData($_GET);
+include_once('menu.php');
+$userData = Menu::getUserData($_GET);
 ?>
 
 <form method="get"><input name="utf8" type="hidden" value="✓">

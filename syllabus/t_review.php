@@ -1,8 +1,9 @@
 <?php
-require 'menu.php';
-$menuName = $_GET['name'];
-$syllabuscontent = findByName($syllabus, $menuName);
+  require 'menu.php';
+  $menuName = $_GET['name'];
+  $syllabuscontent = Menu::findByName($syllabus, $menuName);
 ?>
+
 <html>
 <?php require 'head.php' ?>
 
@@ -35,23 +36,7 @@ $syllabuscontent = findByName($syllabus, $menuName);
                     </h1>
                   </div>
                 </div>
-                <div class="pull-down">
-                  <ul class="LessonDetail__nav-list">
-                    <li class="LessonDetail__nav">
-                      <a class="btn btn-primary btn-go">レビューを書く</a>
-                    </li>
-                    <li class="LessonDetail__nav">
-                      <div id="Favorite__button--12599">
-                        <form method="post">
-                          <button class="btn btn-warning btn-" type="submit">
-                            <i class="glyphicon glyphicon-star"></i>お気に入りに追加
-                          </button>
-                          <input type="hidden" name="authenticity_token">
-                        </form>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
+
                 <div class="clearfix"></div>
               </div>
               <div class="LessonDetail__info">
@@ -65,16 +50,14 @@ $syllabuscontent = findByName($syllabus, $menuName);
                         <th>講師</th>
                         <th>学期</th>
                         <th>コマ</th>
-                        <th>教室</th>
                       </tr>
                       <tr>
-                        <td>2018</td>
-                        <td>全学部共通カリキュラム</td>
+                        <td>2019</td>
+                        <td>経営学部</td>
                         <td>総合系科目(2016~)</td>
-                        <td><a>二階堂　晃祐</a><br></td>
-                        <td>秋</td>
-                        <td>火・4<br></td>
-                        <td>8201</td>
+                        <td><?php echo $syllabuscontent['teacher'] ?><br></td>
+                        <td>春</td>
+                        <td><?php echo $syllabuscontent['day'] ?>・<?php echo $syllabuscontent['coma'] ?><br></td>
                       </tr>
                     </tbody>
                   </table>

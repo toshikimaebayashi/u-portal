@@ -2,10 +2,11 @@
 
   <?php if(!isset($_SESSION["NAME"])) { ?>
   <div class="user-label-icon label-icon-lg m-b-md centered-block">
+    <img src="images/noimage.png">
   </div>
   <?php } else {?>
   <div class="user-label-icon label-icon-lg m-b-md centered-block">
-    <?php require 'sidebar_media.php' ?>
+    <?php Media::sidebar_media_up($_SESSION["NAME"]) ?>
   </div>
   <?php } ?>
   <div class="Status__block Status__block--favorite">
